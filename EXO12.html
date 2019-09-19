@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <p>
+        <input type="text" id="exo_12_input" placeholder="Entrez la valeur"> 
+        <button onclick="Calcul()">Calculer les heures</button>
+        <br>Les heures de vol : <b><span id="exo_12_result"></span></b><br>
+    </p>
+</body>
+
+<script>
+	  function Calcul(){
+    var km = document.getElementById('exo_12_result').value;
+    var mins = (km/1000)*60; 
+    var h = maths.floor(mins/60);
+    var mins_a = mins - (h*60);
+    document.getElementById('exo_12_result').innerHTML = }
+
+
+</script>
+</html>

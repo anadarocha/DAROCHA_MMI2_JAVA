@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<p>
+	<input type="text" id="ex1_input1" placeholder="Entrer la valeur">  
+	<input type="text" id="ex1_input2" placeholder="Entrer la valeur"><span> = <b id="ex1_result"> </b> </span> 
+	<br>
+	<button onclick="getMultiplicate();"> Submit</button>
+	</p>
+</body>
+<script>
+	function getMultiplicate(){
+	var nb_a = document.getElementById('ex1_input1').value;
+	var nb_b = document.getElementById('ex1_input2').value;
+	var result_ex1 = eval(nb_a+' * '+nb_b);
+	alert(result_ex1);
+
+	document.getElementById('result-exo-1-4').innerHTML = result_ex1;}
+	 
+
+</script>
+</html>

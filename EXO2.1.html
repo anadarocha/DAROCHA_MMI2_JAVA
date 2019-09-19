@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<p>
+	<input type="text" id="ex2_input1" placeholder="Entrer la valeur">  
+	<input type="text" id="ex2_input2" placeholder="Entrer la valeur"><span> = <b id="ex1_result"> </b> </span> 
+	<br>
+	<button onclick="getDivide();"> Submit</button>
+	</p>
+</body>
+<script>
+	function getDivide(){
+	var nb_a = document.getElementById('ex2_input1').value;
+	var nb_b = document.getElementById('ex2_input2').value;
+	var result_ex2 = eval(nb_a+' / '+nb_b);
+	alert(result_ex2);
+
+	document.getElementById('result-exo-2-1').innerHTML = result_ex1;}
+	 
+
+</script>
+</html>

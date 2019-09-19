@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<p>
+		<br>
+	Resultat : <span id="result-exo-5"></span>
+
+	</p>
+</body>
+
+<script>
+	function getAleatoire(){
+	var nbmax = 1000;
+	var nbmin = 50;
+	var nombreRandom = Math.floor(Math.random() * (nbmax - nbmin) + nbmin);
+	document.getElementById('result-exo-5').innerHTML = nombreRandom;}
+	window.onload = getAleatoire;
+
+</script>
+</html>

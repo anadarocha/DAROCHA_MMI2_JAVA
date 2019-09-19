@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<p>
+        <input type="text" id="exo_10_input" placeholder="Entrer mots"> 
+        <button onclick="iterateWords()">Ajouter a la phrase</button>
+        <button onclick="resetWords()">Reset la phrase</button> <br>
+        <br>La phrase finale : <b><span id="exo_10_result"></span></b><br>
+    </p>
+</body>
+
+<script>
+	var nb_a = "";
+	function iterateWords(){
+	nb_a += document.getElementById('exo_10_input').value;
+	document.getElementById('exo_10_result').innerHTML = nb_a;}
+
+	function resetWords(){
+	nb_a = "";
+    document.getElementById('exo_10_result').innerHTML = nb_a;}
+
+</script>
+</html>

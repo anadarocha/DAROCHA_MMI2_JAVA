@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<p>
+        <input type="text" id="exo_11_input" placeholder="Entrez votre mise"> 
+        <button onclick="RandomC()">Cote aleatoire</button><br>
+        <br>Cote resultat : <b><span id="exo_11_result"></span></b><br>
+        <br>Benefices : <b><span id="exo_11_resultbenefices"></span></b><br>
+    </p>
+</body>
+
+<script>
+	function RandomC(){
+  	var nombreRandom = Math.floor(Math.random() * (20 - 0.5) + 0.5);
+  	document.getElementById('exo_11_result').innerHTML = nombreRandom; 
+  	var mise = document.getElementById('exo_11_input').value; 
+  	var resultbenefices = nombreRandom * mise;
+  	document.getElementById('exo_11_resultbenefices').innerHTML = resultbenefices;}
+
+</script>
+</html>
